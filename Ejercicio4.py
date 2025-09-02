@@ -6,6 +6,7 @@ matriz = [
 print("Matriz original:")
 print(matriz)
 print("----"*20)
+
 #calcule la suma de la diagonal principal
 suma_diagonal = sum(matriz[i][i] for i in range(len(matriz)))
 print(f"Suma de la diagonal principal: {suma_diagonal}")
@@ -16,6 +17,9 @@ suma_diagonal_inversa = sum(matriz[i][len(matriz)-1-i] for i in range(len(matriz
 print(f"Suma de la diagonal inversa: {suma_diagonal_inversa}")
 print("----"*20)
 
+#Encuentre el número mayor y menor de la matriz.
 num_mayor = max(max(fila) for fila in matriz)#Número mayor de la matriz
 print(f"Número mayor de la matriz: {num_mayor}")
 
+num_menor = min(min(fila) for fila in matriz)#Número menor de la matriz
+print(f"Número menor de la matriz: {num_menor}")
