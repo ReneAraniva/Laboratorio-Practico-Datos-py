@@ -1,8 +1,7 @@
 # Ejercicio 1: Simulación de un Historial de Navegación
 Historial = []#Pila vacia para agregar paginas
 
-# Funciones para manejar el historial
-
+#------- Funciones para manejar el historial---------
 # Agrega una pagina al historial
 def agregar_pagina(pagina):
     Historial.append(pagina)#Metodo para agregar
@@ -57,4 +56,5 @@ while True:
     elif opcion == "4":
         break
     else:
+
         print("Opción no válida. Intente de nuevo.")#Si no se elige una opción válida
